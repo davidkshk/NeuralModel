@@ -21,7 +21,7 @@ class SupervisedTrainer(object):
                  accuracy_display_saved_iterations=float('inf'),
                  accuracy_display_starting_iteration=0,
                  display_resolution=1000):
-        
+        #This is very crucial 
         self.x = x
         self.out = out
         self.use_gpu = use_gpu
