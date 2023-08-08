@@ -63,3 +63,4 @@ trainer.train(training_data,
               batch_size=100, # Trains in batches of 100 training data points
               validation_set_size=10000, # Evaluates on all 10000 validation data points
               validation_interval=200) # Evaluates validation data every 200 batches
+#Code will resume 
