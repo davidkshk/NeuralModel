@@ -15,7 +15,7 @@ class DynamicConsoleTable(object):
             self.divider += '-' * (len(header_string) + 2) + '|'
             self.heavy_divider += '=' * (len(header_string) + 2) + '|'
         self.updated = False
-    
+   #added a comment
     def _format_arg(self, arg, properties):
         if arg == '':
             return ' ' * max(len(properties['name']), properties['width'])
