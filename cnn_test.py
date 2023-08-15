@@ -18,7 +18,7 @@ model = FeedForwardModel([28, 28], 10, [Conv2DComponent(5, num_kernels=20, strid
                                         DropoutComponent(0.98),
                                         FullyConnectedComponent()])
 x, out = model.build()
-
+    # Calculate output as a function of strides and padding type
 print
 print model # Displays configured model components
 print
