@@ -33,6 +33,7 @@ accuracy_fn = lambda out, y: tf.reduce_mean(tf.cast(tf.nn.in_top_k(out, y, 1), t
 
 ##############################################################################
 # Data loader and setup
+# Data loader and setup
 print 'Loading images..'
 mndata = MNIST('./mnist')
 training_data, training_labels = mndata.load_training()
