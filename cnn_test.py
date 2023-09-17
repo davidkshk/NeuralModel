@@ -46,7 +46,7 @@ training_data = np.reshape(training_data, [-1, 28, 28])
 validation_data = np.reshape(validation_data, [-1, 28, 28])
 
 ##############################################################################
-# Training is done
+ #Training is done
 
 trainer = trainer.SupervisedTrainer(x, out,
                                     loss_display_interval=100,

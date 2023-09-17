@@ -26,9 +26,9 @@ class DynamicConsoleTable(object):
         elif isinstance(arg, float):
             s = ('{:.' + str(max(0, properties['width'] - (len(str(int(arg))) + 1 + fixes))) + 'f}').format(arg)
         if properties.get('prefix', False):
-            s = properties['prefix'] + s
+            s = properies['prefix'] + s
         if properties.get('suffix', False):
-            s += properties['suffix']
+            s += propertiest['suffix']
         s = s[:properties['width']]
         space = (max(len(properties['name']), properties['width']) - len(s))
         if properties.get('align', None) == 'left':

@@ -34,7 +34,7 @@ class Model(object):
                 inferred_input_shape or given_input_shape
             if self.components[i].output_shape:
                 inferred_output_indices.add(i)
-            given_input_shape = self.components[i].input_shape
+            given_input_shape = self.compone nts[i].input_shape
             inferred_input_shape = self.components[i].output_shape and \
                 self.components[i]._infer_input_shape(self, self.components[i].output_shape)
             if i == 0 and inferred_input_shape:
@@ -377,8 +377,8 @@ class Pool1DComponent(Component):
                          **self.kwargs)
         x = tf.squeeze(x, 2)
         if not includes_channel_dimension:
-            x = tf.squeeze(x, 2)
         return x
+            x = tf.squeeze(x, 2)
     
     
 class Pool2DComponent(Component):
