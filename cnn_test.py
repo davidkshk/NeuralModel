@@ -65,3 +65,5 @@ trainer.train(training_data,
               validation_set_size=10000, # Evaluates on all 10000 validation data points
               validation_interval=200) # Evaluates validation data every 200 batches
 #Code will resume 
+#Code will resume 
+#Code will resume 
